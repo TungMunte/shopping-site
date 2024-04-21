@@ -1,0 +1,50 @@
+body {
+  background: #f8f9fa;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure all cards have the same height */
+}
+
+.card-img {
+  width: 100%;
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: contain; /* Ensure images maintain aspect ratio */
+  height: 350px; /* Set a fixed height for the card body */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+}
+
+.card-body {
+  flex: 1; /* Allow the card body to expand to fill the remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin-bottom: 10px; /* Add some space between title and other content */
+}
+
+.card-description {
+  flex: 1; /* Allow the description to expand to fill the remaining space */
+}
+
+.buy {
+  margin-top: auto; /* Push the "Add to Cart" button to the bottom */
+}
+
+.price,
+.text-success {
+  margin-top: auto; /* Push the price and state information to the bottom */
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto; /* Add margin to create space between price, state, delivery time, and quantity */
+}
+
+.options {
+  margin-bottom: 10px; /* Add margin between quantity input and the button */
+}
